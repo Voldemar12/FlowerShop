@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Страница с Цветами для Дня Рождения</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.header, .footer {
+  background-color: #1e352e;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #ff69b4;
+}
+
+.flower-img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.back-button {
+  background-color: #ff69b4;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.flower-box {
+  display: inline-block;
+  margin: 10px;
+}
+
+.flower-box img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.info {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #555;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">Желаем счастья в этот особенный день!</div>
+
+<div class="container">
+  <h1>С Днем Рождения!</h1>
+  <img src="Cruspy3.jpg" alt="Цветок" class="flower-img">
+  <p>Желаем вам дня, наполненного любовью, радостью и прекрасными моментами. Пусть ваш день рождения будет таким же особенным, как и вы!</p>
+  
+  <div class="flower-box">
+    <img src="CruspyFlower.jpg" alt="Цветок 1">
+    <p>Цветок 1</p>
+  </div>
+  <div class="flower-box">
+    <img src="Bouquet.jpg" alt="Цветок 2">
+    <p>Цветок 2</p>
+  </div>
+  <div class="flower-box">
+    <img src="Bouquet1.jpg" alt="Цветок 3">
+    <p>Цветок 3</p>
+  </div>
+  <div class="flower-box">
+    <img src="Bouquet2.jpg" alt="Цветок 4">
+    <p>Цветок 4</p>
+  </div>
+  <div class="flower-box">
+    <img src="Buket.jpg" alt="Цветок 5">
+    <p>Цветок 5</p>
+  </div>
+  <div class="flower-box">
+    <img src="Svetik.jpg" alt="Цветок 6">
+    <p>Цветок 6</p>
+  </div>
+  
+  <div class="info">
+    <h2>Дополнительная информация</h2>
+    <p>На этой странице вы найдете поздравительное сообщение, изображение цветка, а также галерею с шестью различными цветами. Надеемся, что эта страница принесет вам радость и уют в ваш праздничный день!</p>
+    <button onclick="openPopup()">Показать дополнительную информацию</button>
+  </div>
+  
+  <div class="popup" id="popup">
+    <span class="popup-close" onclick="closePopup()">X</span>
+    <h3>Дополнительная информация</h3>
+    <p>Дополнительная информация о праздничной странице с цветами для Дня Рождения. Мы желаем вам счастья и радости!</p>
+  </div>
+  
+  <button class="back-button" onclick="goBack()">Назад</button>
+</div>
+
+<div class="footer">© 2023 Команда Поздравлений</div>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+
+function openPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
+
+<style>
+    body {
+        background: url(Birthday.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+</style>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветочная долина</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #0b481b;
+            color: white;
+            text-align: center;
+            width: 100%;
+            padding: 10px 0;
+        }
+        .top-info {
+            background-color: #083119;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .sidebar {
+            flex: 0 0 200px;
+            background-color: #361919;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        main {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        footer {
+            background-color: #103e23;
+            color: rgb(57, 28, 28);
+            text-align: center;
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-sidebar {
+            flex: 0 0 200px;
+            background-color: #3d1d1d;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        body {
+    color: white;
+  }
+  .popup {
+        position: fixed;
+        top: 50%;
+        right: -200px;
+        transform: translateY(-50%);
+        background-color: #f9f9f9;
+        width: 150px;
+        height: 80vh;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s;
+    }
+
+    .popup a {
+        display: block;
+        margin-bottom: 15px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .popup a:hover {
+        color: #555;
+    }
+
+    .popup.show {
+        right: 0;
+    }
+    main p {
+        color: rgb(0, 0, 0);
+    }
+    main {
+        background-color: #6f4040;
+        padding: 30px;
+        text-align: center;
+    }
+
+    main p {
+        color: rgb(87, 27, 27);
+    }
+
+    .flower {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .flower img {
+        max-width: 200px;
+        border-radius: 10px;
+    }
+
+    .flower p {
+        font-style: italic;
+    }
+    main p {
+        color: black;
+    }
+    <style>
+    main {
+        background-color: #000000;
+        padding: 20px;
+        text-align: center;
+    }
+
+    main p {
+        color: rgb(89, 35, 35);
+    }
+
+    .flower {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .flower img {
+        max-width: 200px;
+        border-radius: 10px;
+    }
+
+    .flower p {
+        font-style: italic;
+    }
+    .flower p {
+        color: black;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="popup">
+        <a href="FlowersForWedding.html">Цветы для свадьб</a>
+        <a href="FlowersForBirthday.html">Цветы для День Рождений</a>
+        <a href="FlowersForStudy.html">Цветы для Выпускников</a>
+    </div>
+
+    <button onclick="togglePopup()">Открыть</button>
+
+    <script>
+        function togglePopup() {
+            var popup = document.querySelector('.popup');
+            popup.classList.toggle('show');
+        }
+    </script>
+    <header>
+        <h1>Цветочная долина</h1>
+    </header>
+
+    <div class="top-info">
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="CruspyFlower.html">Красивые и Вкусные цветы</a></li>
+                <li><a href="FlowersForEvents.html">Цветы для праздников</a></li>
+                <li><a href="Contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Добро пожаловать на страницу о цветах для праздников!</h1>
+
+    <p>Цветы - отличный подарок для любого праздника. Они добавляют красоты и радости в нашу жизнь.</p>
+    
+    <h2>Популярные цветы для праздников:</h2>
+    <ul>
+      <li>Розы</li>
+      <li>Хризантемы</li>
+      <li>Тюльпаны</li>
+      <li>Лилии</li>
+    </ul>
+    
+    <p>Не забудьте порадовать ваших близких цветами на следующем празднике!</p>
+    
+    <main>
+        <p>Добро пожаловать на страницу "Цветы для праздников"! Здесь вы найдете разнообразные цветочные композиции для особых событий.</p>
+
+        <div class="flower">
+            <img src="wedding_flowers.jpg" alt="Цветы для свадьбы">
+            <p>Изысканные букеты для вашего торжества</p>
+        </div>
+
+        <div class="flower">
+            <img src="birthday_flowers.jpg" alt="Цветы для Дня Рождения">
+            <p>Яркие цветы для поздравлений с Днем Рождения</p>
+        </div>
+
+        <div class="flower">
+            <img src="graduation_flowers.jpg" alt="Цветы для Выпускников">
+            <p>Элегантные композиции для выпускников</p>
+        </div>
+    </main>
+
+    <footer>
+      <p>С уважением, Ваша страница о цветах для праздников</p>
+    </footer>
+    <style>
+        body {
+            background: url(Flower2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+
+<div class="content">
+    <div class="sidebar">
+        <h3>Информация</h3>
+        <li><a href="#">Доставка цветов на дом</a></li>
+        <li><a href="#">Сезонные скидки</a></li>
+        <li><a href="#">Игра от нашего дружелюбного сайта GreenValley</a></li>
+    </div>
+    
+    <main>
+        <p>Добро пожаловать на цветочный сайт, здесь вы сможете купить цветы на любой Цвет и Вкус, тут мы продаём цветы для праздников, событий и каждый день дарим улыбки нашим любимым покупателям</p>
+    </main>
+    
+    <div class="sidebar">
+        <h3>Контакты</h3>
+        <p>Телефон: 123-456-789</p>
+        <p>Email: info@cvetochka.ru</p>
+    </div>
+</div>
+</body>
+</html>
